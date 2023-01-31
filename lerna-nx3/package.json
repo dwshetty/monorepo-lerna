@@ -1,0 +1,17 @@
+{
+  "name": "lerna-nx-from-lerna-add-caching",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^6.1.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "build:scope": "lerna run build --scope=header",
+    "build:since": "lerna run build --since=origin/main",
+    "test": "lerna run test",
+    "serve": "lerna run serve"
+  }
+}

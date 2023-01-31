@@ -1,0 +1,19 @@
+{
+  "name": "lerna-nx-from-add-nx-to-monorepo",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^6.1.0",
+    "nx": "15.2.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "build:scope": "lerna run build --scope=header",
+    "build:since": "lerna run build --since=origin/main",
+    "test": "lerna run test",
+    "serve": "lerna run serve",
+    "graph": "nx graph"
+  }
+}
